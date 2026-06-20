@@ -1,0 +1,17 @@
+{
+  "config": {
+    "step": {
+      "discovery_confirm": {
+        "title": "發現新的樹莓派",
+        "description": "是否要將 **{name}** 加入 Home Assistant？",
+        "data": {
+          "name": "裝置名稱"
+        }
+      }
+    },
+    "abort": {
+      "no_mac": "無法從樹莓派取得 MAC 地址。",
+      "already_configured": "此裝置已經設定過了。"
+    }
+  }
+}

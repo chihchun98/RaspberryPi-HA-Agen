@@ -1,0 +1,58 @@
+mqtt:
+  host: 192.168.0.254
+  port: 1883
+  topic_prefix: rpi_agent
+
+ha_discovery:
+  enabled: yes
+  prefix: homeassistant
+
+gpio_modules:
+  - name: rpi
+    module: raspberrypi
+
+digital_outputs:
+  - name: gpio_14
+    module: rpi
+    pin: 14
+    ha_discovery:
+      name: "Pi GPIO 14 (Out)"
+
+  - name: gpio_15
+    module: rpi
+    pin: 15
+    ha_discovery:
+      name: "Pi GPIO 15 (Out)"
+
+  - name: gpio_18
+    module: rpi
+    pin: 18
+    ha_discovery:
+      name: "Pi GPIO 18 (Out)"
+
+  - name: gpio_23
+    module: rpi
+    pin: 23
+    ha_discovery:
+      name: "Pi GPIO 23 (Out)"
+
+  - name: gpio_24
+    module: rpi
+    pin: 24
+    ha_discovery:
+      name: "Pi GPIO 24 (Out)"
+
+digital_inputs:
+  - name: gpio_17
+    module: rpi
+    pin: 17
+    pullup: yes
+    ha_discovery:
+      name: "Pi GPIO 17 (In)"
+
+  - name: gpio_27
+    module: rpi
+    pin: 27
+    pullup: yes
+    ha_discovery:
+      name: "Pi GPIO 27 (In)"

@@ -1,0 +1,1 @@
+howard ALL=(ALL) NOPASSWD: /bin/mount, /bin/umount, /usr/bin/mount, /usr/bin/umount, /bin/systemctl, /usr/bin/systemctl, /sbin/reboot, /usr/sbin/reboot, /bin/mkdir, /usr/bin/mkdir, /bin/rmdir

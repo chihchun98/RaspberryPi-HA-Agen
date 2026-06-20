@@ -1,0 +1,14 @@
+[Unit]
+Description=MQTT GPIO Agent
+After=network.target docker.service
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/home/howard/mqtt_io_env
+ExecStart=/home/howard/mqtt_io_env/bin/python3 /home/howard/pi_mqtt_gpio.py
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

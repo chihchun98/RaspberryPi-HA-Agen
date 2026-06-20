@@ -1,0 +1,17 @@
+{
+  "domain": "pi_agent",
+  "name": "Raspberry Pi Agent",
+  "codeowners": ["@howard"],
+  "config_flow": true,
+  "dependencies": [],
+  "documentation": "https://github.com/chihchun98/pi_agent",
+  "issue_tracker": "https://github.com/chihchun98/pi_agent/issues",
+  "iot_class": "local_polling",
+  "requirements": [],
+  "version": "1.0.0",
+  "zeroconf": [
+    {
+      "type": "_pi-agent._tcp.local."
+    }
+  ]
+}

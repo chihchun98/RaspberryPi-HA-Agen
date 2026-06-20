@@ -1,0 +1,17 @@
+{
+  "config": {
+    "step": {
+      "discovery_confirm": {
+        "title": "New Pi Agent Discovered",
+        "description": "Do you want to add **{name}** to Home Assistant?",
+        "data": {
+          "name": "Device Name"
+        }
+      }
+    },
+    "abort": {
+      "no_mac": "Could not extract MAC address from Pi.",
+      "already_configured": "Device is already configured."
+    }
+  }
+}

@@ -1,0 +1,14 @@
+[Unit]
+Description=Raspberry Pi HA Agent
+After=network.target docker.service
+
+[Service]
+Type=simple
+User=howard
+WorkingDirectory=/home/howard/pi_agent_server
+ExecStart=/home/howard/pi_agent_server/.venv/bin/python main.py
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
