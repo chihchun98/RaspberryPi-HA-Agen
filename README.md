@@ -29,10 +29,11 @@ This repository consists of three main parts:
 
 ## 🚀 Quick Setup Overview
 
-1.  **On the Raspberry Pi**:
-    *   Copy `pi_agent_server` to your Pi and install dependencies (`pip install -r requirements.txt`).
-    *   Copy `pi_agent_sudoers` to `/etc/sudoers.d/` to allow passwordless mounting.
-    *   Setup the systemd services (`pi_agent.service` and `pi_mqtt_gpio.service`).
+1.  **On the Raspberry Pi (One-Click Install)**:
+    Just run the following command in your Raspberry Pi terminal to automatically download, install dependencies, setup sudoers, and start the background services:
+    ```bash
+    curl -sSL https://raw.githubusercontent.com/chihchun98/RaspberryPi-HA-Agen/main/install.sh | bash
+    ```
 2.  **On Home Assistant**:
     *   Copy the `custom_components/pi_agent` folder into your HA `config/custom_components` directory.
     *   Restart Home Assistant.
